@@ -10,13 +10,19 @@ A web application to connect to an Android TV device and capture screenshots rem
    cd <repo name>
 3. **install dependencies**
    npm install
+4. **start application**   
    npm start
 
 ## connection
 
-1. Enable developer option and allow usb and  wireless debug in your device
-2. The device needs to authorize the computer for ADB connections. This usually requires a one-time setup via USB, where you approve the connection.
-3. After connection via USB you are able to connect wirelessly in your future connections
+1. Enable developer option and allow USB and  wireless debug in your device
+   **Authorize ADB Connections**
+2. Connect your device to your computer via USB for the first-time setup.
+3. While connected via USB, run the following commands in your terminal:
+   adb tcpip 5555
+   adb connect <device_ip_address>:5555
+After this setup, the user is able to connect wirelessly in future connection   
+
 
    
 ## usage

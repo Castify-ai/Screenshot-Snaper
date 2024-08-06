@@ -5,9 +5,9 @@ A web application to connect to an Android TV device and capture screenshots rem
 ## Installation
 
 1. **Clone the repository**
-   git clone https://github.com/username/android-tv-screenshots.git
+   git clone <repo url>
 2. **Navigate your project**
-   cd android-tv-screenshot
+   cd <repo name>
 3. **install dependencies**
    npm install
    npm start
